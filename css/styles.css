@@ -41,7 +41,7 @@ display: flex;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
-width: 1170px;
+width: 1200px;
 padding-right: 15px;
 padding-left: 15px;
 }
@@ -183,12 +183,12 @@ padding-left: 15px;
 
 .advantages-container {
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 .advantages-container .item {
@@ -224,6 +224,24 @@ padding-left: 15px;
 
 /*===== WHAT WE DO========*/
 
+.what-we-do-container {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-do-container .item {
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do-container .item + .item {
+    margin-left: 30px;
+}
+
 .what-we-do-list {
     font-family: Roboto;
     font-style: normal;
@@ -245,20 +263,46 @@ padding-left: 15px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
     color: var(--title-text-color);
 }
 
-.team-list {
+.team-container {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-container .item {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    margin-left: 0;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
-.job-duty {
+.team-container .item + .item {
+    margin-left: 30px;
+}
+
+.team-container .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var (--title-text-color);
+}
+
+.team-container .job-duty {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
