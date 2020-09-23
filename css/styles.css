@@ -19,6 +19,8 @@
 .body {
     font-family: Roboto, sans-serif;
     font-style: normal;
+    max-width: 1600px;
+    margin: auto;
 }
 
 /* Утилиты */
@@ -39,7 +41,7 @@ a {
 .nav-container {
 display: flex;
 align-items: center;
-margin: 0 auto;
+margin: auto;
 width: 1200px;
 /* height: 80px; */
 padding: 0 15px;
@@ -94,9 +96,10 @@ padding: 0 15px;
 
 .navigation-list-link {
     display: block;
+    font-family: Roboto;
+    font-style: normal;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: var(--title-text-color);
@@ -177,6 +180,7 @@ padding: 0 15px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
+    margin-top: 30px;
     color: white;
     background-color: #2F303A;
     background-color: var(--accent-color)
@@ -185,10 +189,9 @@ padding: 0 15px;
     display: flex;
     text-align: center;
     padding: 200px 452px 280px 452px;
-    width: 100%;
+    max-width: 1600px;
     height: 600px;
-    margin-top: 0px;
-    margin-bottom: 0px ;
+    margin: auto ;
     background-color: #2F303A;
 }
     
@@ -366,15 +369,12 @@ padding: 0 15px;
 
 .portfolio-container .item + .item { 
     margin-left: 8px;
-    
+}
+
     /* ============  OUR PROJECTS  ============*/
 
-/* .nav-all:hover,
-   .nav-all:focus {
-    color: var(--accent-color); */
-}
 
-}
+
 
 
 
@@ -433,7 +433,6 @@ padding: 0 15px;
     border-left: 1px solid #eeeeee; */
 }
     
-}
 
 .project-description { 
     display: block;
@@ -459,7 +458,12 @@ padding: 0 15px;
 /* ============  FOOTER  ============*/
 
 .footer {
+    display: flex;
+    max-width: 1600px;
+    height: 252px;
+    margin: auto;
     background-color: #2F303A;
+    
 }
     
 .footer-logo-color {
