@@ -147,11 +147,111 @@ padding: 0 15px;
 
 /*=========== HERO ==================*/
 
-
-/* advantages */
-
-.section-title {
+.hero {
+    background: #2F303A;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+}
+.hero-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    width: 696px;
+    height: 120px;
+    margin: 200px 452px 30px 452px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    color: var(--accent-color);
+    margin: 0px 700px 200px 700px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+    background-color: var(--accent-color)
+
+}
+
+/* код стилю героя станом на 23-09-2020 */
+/* .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: auto;
+    text-align: end;
+    background-color: #2F303A; 
+} */
+
+ 
+/* .hero-container {
+    display: flex;
+    width: 696px;
+    height: 120px;
+}
+
+.hero-title {
+    width: 696px;
+    height: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+    margin-left: 452px;
+    margin-right: 452px;
+   
+    color: #FFFFFF;
+  }
+
+  .hero-button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+    background-color: #2F303A;
+    background-color: var(--accent-color)
+} */
+
+/* кінець код стилю героя станом на 23-09-2020 */
+
+
+
+/* .hero-title {
+    display: block;
     width: 696px;
     height: 120px;
     padding-top: 200px 452px  280px 452px;
@@ -164,8 +264,8 @@ padding: 0 15px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     
-    
     color: #FFFFFF;
+    
 }
 
 .hero-button {
@@ -180,7 +280,7 @@ padding: 0 15px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px; 
     color: white;
     background-color: #2F303A;
     background-color: var(--accent-color)
@@ -193,7 +293,7 @@ padding: 0 15px;
     height: 600px;
     margin: auto ;
     background-color: #2F303A;
-}
+} */
     
 
 /*================ END HERO ===========*/
@@ -319,6 +419,17 @@ padding: 0 15px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+}
+.team-title .item .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+
+
 }
 
 .team-container, .job-duty  {
