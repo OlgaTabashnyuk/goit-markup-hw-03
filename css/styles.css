@@ -12,17 +12,18 @@
 *,
 ::before,
 ::after {
-    /* box-sizing: border-box; */
-    margin: 0;
+        margin: 0;
     padding: 0;
+}
 
-
+*,
+::before,
+::after {
+ box-sizing: border-box; 
 }
 /*============ STUDIA (index)===========*/
 /* ============  BODY  ============*/
 .body {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
     max-width: 1600px;
     margin: auto;
 }
@@ -311,8 +312,9 @@ padding: 0 15px;
 .advantages {
     width: 1200px;
     padding-top: 94px;
+    padding-bottom: 94px;
     margin: 0 auto; 
-    background-color: lightcoral;
+    
 }
 
 .advantages-container {
@@ -323,6 +325,7 @@ padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    justify-content: space-between;
 }
 
 .advantages-container .item {
@@ -342,6 +345,7 @@ padding: 0 15px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
@@ -358,6 +362,9 @@ padding: 0 15px;
 
 /*===== WHAT WE DO========*/
 
+.do-list {
+    margin: 0 auto;
+    }
 .what-we-do-container {
     display: flex;
     width: 1200px;
@@ -385,21 +392,25 @@ padding: 0 15px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
     color: var(--title-text-color);
  }
  /*=====  END WHAT WE DO========*/
 
 /*========= OUR TEAM ========*/
-.team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F5F4FA;
-    max-width: 1600px;
-    height: 648px;
-    margin: 0 auto;
-    padding-bottom: 94px;
 
+.team {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #F5F4FA;
+}
+
+.team-container {
+    display: flex; 
+    flex-direction: column;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 
 .team-title {
@@ -407,79 +418,80 @@ padding: 0 15px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 94px;
     margin-bottom: 50px;
-    color: var(--title-text-color);
     
-}
-
-.team-container {
-    display: flex;
-    width: 1200px;
-    height: 648px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-}
-
-.team-container .item {
     color: var(--title-text-color);
+}
+
+.team-list {
+   display: flex; 
+   justify-content: center
+}
+
+.team-element {
+    text-align: center;
     background-color: #fff;
-
+}
+.team-container .team-element + .team-element {
+    margin-left: 50px;
 }
 
-.team-container .item + .item {
-    margin-left: 30px;
-}
-
-.team-container .title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
-.team-container .item .name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.875px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-
-    color: var(--title-text-color);
-}
-.team .item-content {
-    padding-top: 30px;
-    padding-left: 59px;
-    padding-right: 60px;
-}
-
-
-.team-container, .job-duty  {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--primary-text-color);
-   
-}
-
-.job-duty {
+.team-photo {
+    display: block;
     margin-bottom: 30px;
+
 }
+
+.content {
+    border: 1px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-member {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,187px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+
+    margin-bottom: 10px;
+}
+
+.profession {
+    display: block;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-style: 400;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1,187px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== END OUR TEAM=======*/
 
  /*=========== portfolio======  */
@@ -600,31 +612,22 @@ padding: 0 15px;
     max-width: 1600px;
     height: 252px;
     margin: auto;
+    padding-left: 215px;
     background-color: #2F303A;
     
 }
  
 .footer-elements {
     display: block;
-    width: 1200px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 215px;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding-left: 215px; */
+  
 }
-.footer-logo-color {
-    color: #FFFFFF ;
-    text-decoration: none;
-}
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
 
-.footer-address-item-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
 }
 
 .footer-logo-color {
@@ -633,7 +636,21 @@ padding: 0 15px;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    color: #FFFFFF ;
     text-decoration: none;
+}
+
+.footer-address-item  li {
+    display: block;
+    margin-bottom: 9px;
+}
+.footer-address-item-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
