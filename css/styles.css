@@ -431,9 +431,9 @@ padding: 0 15px;
 }
 
     /* ============  OUR PROJECTS  ============*/
-.projects {
+/* .projects {
 
-}
+} */
 
 .project-title {
     display: block;
@@ -459,6 +459,9 @@ padding: 0 15px;
     justify-content: center;
  }
 
+ .pic {
+    display: block;
+}
 .project-list .item {
     width: 370px;
     height: 404px;
@@ -509,22 +512,23 @@ padding: 0 15px;
 /* ============  FOOTER  ============*/
 
 .footer {
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
-    max-width: 1600px;
+    max-width: 1200px;
     height: 252px;
+    padding-top: 60px;
     margin: auto;
-    padding-left: 215px;
+    padding-left: 15px;
     background-color: #2F303A;
     
 }
  
-.footer-elements {
-    display: block;
-    padding-top: 60px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-bottom: 60px;
-    /* padding-left: 215px; */
-  
+     
 }
 .footer-logo {
     display: block;
@@ -542,6 +546,16 @@ padding: 0 15px;
     text-decoration: none;
 }
 
+.footer-logo-blue {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
 .footer-address-item  li {
     display: block;
     margin-bottom: 9px;
@@ -556,16 +570,6 @@ padding: 0 15px;
     color: #FFFFFF;
 }
 
-.footer-logo-blue {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-}
-
 .footer-address-contact-link {
     font-family: Roboto;
     font-style: normal;
@@ -573,7 +577,9 @@ padding: 0 15px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 60px;
+    color: var(--primary-text-color)
 }
-/* ============  END FOOTER  ============*/
+    
+    /* ============  END FOOTER  ============*/
 
