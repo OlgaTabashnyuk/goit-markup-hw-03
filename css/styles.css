@@ -12,7 +12,11 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+
+
 }
 /*============ STUDIA (index)===========*/
 /* ============  BODY  ============*/
@@ -38,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+  
+}
 .nav-container {
 display: flex;
 align-items: center;
@@ -77,8 +85,8 @@ padding: 0 15px;
 .navigation-list {
     display: flex;
     margin-right: auto;
+    margin-left: 93px;
     
-  
 }
 
 
@@ -300,6 +308,13 @@ padding: 0 15px;
 
 /*=========== ADVANTAGES ===========*/
 
+.advantages {
+    width: 1200px;
+    padding-top: 94px;
+    margin: 0 auto; 
+    background-color: lightcoral;
+}
+
 .advantages-container {
     display: flex;
     width: 1200px;
@@ -350,6 +365,7 @@ padding: 0 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 94px;
 }
 
 .what-we-do-container .item {
@@ -374,6 +390,18 @@ padding: 0 15px;
  /*=====  END WHAT WE DO========*/
 
 /*========= OUR TEAM ========*/
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F4FA;
+    max-width: 1600px;
+    height: 648px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+
+}
+
 .team-title {
     font-family: Roboto;
     font-style: normal;
@@ -382,28 +410,28 @@ padding: 0 15px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 94px;
     margin-bottom: 50px;
     color: var(--title-text-color);
+    
 }
 
 .team-container {
     display: flex;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 648px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
 
 .team-container .item {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 0;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background-color: #fff;
+
 }
 
 .team-container .item + .item {
@@ -420,17 +448,22 @@ padding: 0 15px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.team-title .item .name {
+.team-container .item .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.875px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 
     color: var(--title-text-color);
-
-
 }
+.team .item-content {
+    padding-top: 30px;
+    padding-left: 59px;
+    padding-right: 60px;
+}
+
 
 .team-container, .job-duty  {
     font-family: Roboto;
@@ -444,6 +477,9 @@ padding: 0 15px;
    
 }
 
+.job-duty {
+    margin-bottom: 30px;
+}
 /*======== END OUR TEAM=======*/
 
  /*=========== portfolio======  */
@@ -485,11 +521,6 @@ padding: 0 15px;
     /* ============  OUR PROJECTS  ============*/
 
 
-
-
-
-
-
 .project-title {
     display: block;
     margin-top: 4px;
@@ -512,12 +543,7 @@ padding: 0 15px;
     margin-left: auto;
     margin-bottom: 94px;
     justify-content: center;
-    
-
-}
-.img {
-    display: block;
-}
+ }
 
 .project-container .item {
     width: 370px;
@@ -570,13 +596,22 @@ padding: 0 15px;
 
 .footer {
     display: flex;
+    /* flex-direction: column; */
     max-width: 1600px;
     height: 252px;
     margin: auto;
     background-color: #2F303A;
     
 }
+ 
+.footer-elements {
+    display: block;
+    width: 1200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 215px;
     
+}
 .footer-logo-color {
     color: #FFFFFF ;
     text-decoration: none;
