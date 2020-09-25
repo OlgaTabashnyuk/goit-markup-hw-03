@@ -299,7 +299,8 @@ padding: 0 15px;
 
 /*========= OUR TEAM ========*/
 
-.team {
+    
+    .team {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #F5F4FA;
@@ -307,8 +308,12 @@ padding: 0 15px;
 
 .team-container {
     display: flex; 
-    flex-direction: column;
-    padding-top: 94px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     padding-bottom: 94px;
     
 }
@@ -328,7 +333,7 @@ padding: 0 15px;
 
 .team-list {
    display: flex; 
-   justify-content: center
+   align-items: center;
 }
 
 .team-element {
@@ -336,7 +341,7 @@ padding: 0 15px;
     background-color: #ffffff;
 }
 .team-container .team-element + .team-element {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .team-photo {
@@ -346,16 +351,14 @@ padding: 0 15px;
 .content {
     padding-top: 30px;
     border-radius: 0px 0px 4px 4px;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee; 
+    
 }
 .team-member {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,187px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -371,7 +374,7 @@ padding: 0 15px;
     font-style: 400;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1,187px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -514,7 +517,7 @@ padding: 0 15px;
 .footer {
     /* display: flex; */
     /* flex-direction: column; */
-    max-width: 1200px;
+    max-width: 1600px;
     height: 252px;
     padding-top: 60px;
     margin: auto;
@@ -523,11 +526,13 @@ padding: 0 15px;
     
 }
  
-.container {
+.footer .container {
     display: flex;
+    width: 1200px;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 60px;
+
      
 }
 .footer-logo {
