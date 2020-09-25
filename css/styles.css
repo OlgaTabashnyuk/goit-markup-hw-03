@@ -6,6 +6,8 @@
     --primary-text-color: #757575; ; 
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --font-family: Roboto;
+    --font-style: normal;
 }
 
 
@@ -304,6 +306,7 @@ padding: 0 15px;
     max-width: 1600px;
     margin: 0 auto;
     background-color: #F5F4FA;
+    padding-top: 94px;
 }
 
 .team-container {
@@ -514,14 +517,26 @@ padding: 0 15px;
 
 /* ============  FOOTER  ============*/
 
+
+
+ 
+/* .team {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #F5F4FA;
+    padding-top: 94px;
+} */
+
+
+
 .footer {
     /* display: flex; */
     /* flex-direction: column; */
     max-width: 1600px;
     height: 252px;
+    margin: 0 auto;
     padding-top: 60px;
-    margin: auto;
-    padding-left: 15px;
+    padding-left: 215px; 
     background-color: #2F303A;
     
 }
@@ -529,7 +544,6 @@ padding: 0 15px;
 .footer .container {
     display: flex;
     width: 1200px;
-    flex-direction: column;
     align-items: flex-start;
     padding-bottom: 60px;
 
@@ -552,7 +566,7 @@ padding: 0 15px;
 }
 
 .footer-logo-blue {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
